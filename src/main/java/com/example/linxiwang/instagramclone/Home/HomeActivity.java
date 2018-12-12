@@ -32,7 +32,6 @@ public class HomeActivity extends AppCompatActivity {
         setupFirebaseAuth();
 
         setupBottomNavigationView();
-        setupViewPager();
 
     }
 
@@ -83,18 +82,6 @@ public class HomeActivity extends AppCompatActivity {
     /**
      * responsible for tabs
      */
-    private void setupViewPager(){
-        SectionsPagerAdapter adapter= new SectionsPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new HomeFragment());//index 0
-        ViewPager viewPager = (ViewPager)findViewById(R.id.container);
-        viewPager.setAdapter(adapter);
-
-        TabLayout tabLayout = (TabLayout)findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(viewPager);
-
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_house);
-
-    }
 
     /**
      * BottomNavigationViewSetup 

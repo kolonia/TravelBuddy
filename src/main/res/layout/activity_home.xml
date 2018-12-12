@@ -11,38 +11,106 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <!--top tool bar-->
-        <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/rellayout1">
+        <include layout="@layout/snippet_top_profilebar"/>
 
-            <include layout="@layout/layout_top_tabs"/>
-
-        </RelativeLayout>
 
         <!--middle section(body)-->
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/rellayout2"
-                android:layout_below="@+id/rellayout1">
+                android:layout_height="match_parent"
+                android:id="@+id/rellayout2" android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
 
-            <include layout="@layout/layout_center_viewpagers"/>
-            <ImageButton
-                    android:layout_width="165dp"
-                    android:layout_height="222dp" tools:srcCompat="@tools:sample/backgrounds/scenic[11]"
-                    android:layout_alignParentStart="true" android:layout_marginStart="30dp"
+            <ImageView
+                    android:layout_width="152dp"
+                    android:layout_height="120dp" app:srcCompat="@drawable/place1"
+                    android:layout_alignParentStart="true" android:layout_marginStart="20dp"
                     android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
-                    android:id="@+id/imageButton" android:layout_marginTop="18dp" android:layout_marginLeft="30dp"/>
+                    android:id="@+id/imageView2"
+                    android:layout_marginTop="97dp" android:layout_marginLeft="21dp"/>
+            <ImageView
+                    android:layout_width="152dp"
+                    android:layout_height="120dp" app:srcCompat="@drawable/place2"
+                    android:layout_alignParentStart="true" android:layout_marginStart="214dp"
+                    android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                    android:id="@+id/imageView3"
+                    android:layout_marginTop="377dp" android:layout_marginLeft="220dp"/>
+            <ImageView
+                    android:layout_width="152dp"
+                    android:layout_height="120dp" app:srcCompat="@drawable/place3"
+                    android:layout_alignParentStart="true" android:layout_marginStart="214dp"
+                    android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                    android:id="@+id/imageView4"
+                    android:layout_marginTop="242dp" android:layout_marginLeft="214dp"/>
+            <ImageView
+                    android:layout_width="152dp"
+                    android:layout_height="120dp" app:srcCompat="@drawable/place4"
+                    android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                    android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                    android:id="@+id/imageView5"
+                    android:layout_marginTop="242dp" android:layout_marginLeft="19dp"/>
+            <ImageView
+                    android:layout_width="151dp"
+                    android:layout_height="120dp" app:srcCompat="@drawable/place5"
+                    android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                    android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                    android:id="@+id/imageView6"
+                    android:layout_marginTop="377dp" android:layout_marginLeft="18dp"/>
+            <ImageView
+                    android:layout_width="152dp"
+                    android:layout_height="120dp" app:srcCompat="@drawable/place6"
+                    android:layout_alignParentStart="true" android:layout_marginStart="214dp"
+                    android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                    android:id="@+id/imageView7"
+                    android:layout_marginTop="97dp" android:layout_marginLeft="209dp"/>
+            <TextView
+                    android:text="A lovely trip to Venice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                    android:layout_marginStart="21dp" android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" android:id="@+id/textView6" android:layout_marginTop="218dp"
+                    android:layout_marginLeft="21dp"/>
+            <TextView
+                    android:text="A lovely trip to venice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_below="@+id/imageView4"
+                    android:id="@+id/textView7" android:layout_alignStart="@+id/textView6"
+                    android:layout_marginTop="1dp"/>
+            <TextView
+                    android:text="Ski - Val Thorens"
+                    android:layout_width="176dp"
+                    android:layout_height="18dp" android:layout_below="@+id/imageView3"
+                    android:id="@+id/textView8" android:layout_marginTop="0dp"
+                    android:layout_marginLeft="21dp"/>
+            <TextView
+                    android:text="A cruise to Helsinki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" android:layout_alignParentTop="true"
+                    android:layout_marginEnd="81dp" android:id="@+id/textView9" android:layout_marginTop="216dp"
+                    android:layout_marginRight="81dp"/>
+            <TextView
+                    android:text="Beach CinqueTerre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_below="@+id/imageView4"
+                    android:id="@+id/textView10" android:layout_marginTop="1dp"
+                    android:layout_alignEnd="@+id/imageView3" android:layout_marginEnd="33dp"/>
+            <TextView
+                    android:text="Road Trip in Scotland"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:layout_marginTop="-2dp"
+                    android:layout_alignEnd="@+id/imageView3"
+                    android:layout_marginRight="37dp" android:layout_marginBottom="52dp"
+                    android:layout_below="@+id/imageView3" android:layout_marginEnd="22dp"/>
+
 
         </RelativeLayout>
 
         <!--bottom navigation-->
 
         <include layout="@layout/layout_bottom_navigation_view"/>
-
-
 
 
     </RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:visibility="visible">
+        <include layout="@layout/snippet_top_profilebar"/>
+
+
+        <TextView
+                android:text="Alexandra Kolonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" android:id="@+id/name" android:layout_marginTop="84dp"
+                android:layout_marginLeft="0dp" android:textSize="30sp" android:textStyle="bold"
+                android:textColor="@color/black" app:fontFamily="cursive"
+                android:layout_centerVertical="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true" android:id="@+id/interests" android:layout_marginBottom="196dp"
+                android:layout_marginLeft="0dp" android:textColor="@color/black" android:textSize="18sp"
+                android:text="Interests: food"
+                android:layout_centerVertical="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true" android:id="@+id/favorite_places" android:layout_marginBottom="162dp"
+                android:layout_marginLeft="0dp" android:textColor="@color/black" android:textSize="18sp"
+                android:text="Favorite place: Stockholm"
+                android:layout_centerVertical="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true" android:id="@+id/bio" android:layout_marginBottom="128dp"
+                android:layout_marginLeft="0dp" android:textColor="@color/black" android:textSize="18sp"
+                android:text="This is a bio."
+                android:layout_centerVertical="true"/>
+        <TextView
+                android:text="Age: 19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true" android:id="@+id/age" android:layout_marginBottom="235dp"
+                android:layout_marginLeft="0dp" android:textColor="@color/black" android:textSize="18sp"
+                android:layout_centerVertical="true"/>
+        <Button
+                android:text="Send a message"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="117dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/button_message"
+                android:layout_marginBottom="70dp"
+                android:layout_marginLeft="117dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded_button"/>
+        <ImageView
+                android:layout_width="236dp"
+                android:layout_height="214dp" app:srcCompat="@drawable/alex"
+                android:layout_alignParentStart="true" android:layout_marginStart="0dp"
+                android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:id="@+id/imageView"
+                android:layout_marginTop="123dp" android:layout_marginLeft="0dp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_bottom_navigation_view"/>
+
+
+</RelativeLayout>

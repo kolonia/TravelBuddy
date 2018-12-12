@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">InstagramClone</string>
+    
+    <string name="profile_fragment">Profile</string>
+    
+    <string name="dbname_users">users</string>
+    <string name="dbname_user_account_settings">user_account_settings</string>
 </resources>
